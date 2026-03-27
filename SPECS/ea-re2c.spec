@@ -55,8 +55,24 @@ rm -rf %{buildroot}
 
 %files
 %attr(755,root,root) /usr/bin/re2c
+%attr(755,root,root) /usr/bin/re2d
+%attr(755,root,root) /usr/bin/re2hs
+%attr(755,root,root) /usr/bin/re2js
+%attr(755,root,root) /usr/bin/re2ocaml
+%attr(755,root,root) /usr/bin/re2py
+%attr(755,root,root) /usr/bin/re2swift
+%attr(755,root,root) /usr/bin/re2v
+%attr(755,root,root) /usr/bin/re2zig
 /usr/share/man/man1/re2c.1.gz
-/usr/share/re2c/stdlib/unicode_categories.re
+/usr/share/man/man1/re2d.1.gz
+/usr/share/man/man1/re2hs.1.gz
+/usr/share/man/man1/re2js.1.gz
+/usr/share/man/man1/re2ocaml.1.gz
+/usr/share/man/man1/re2py.1.gz
+/usr/share/man/man1/re2swift.1.gz
+/usr/share/man/man1/re2v.1.gz
+/usr/share/man/man1/re2zig.1.gz
+/usr/share/re2c/stdlib/
 
 %changelog
 * Tue Mar 24 2026 Cory McIntire <cory.mcintire@webpros.com> - 4.5-1
