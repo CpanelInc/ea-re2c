@@ -1,5 +1,5 @@
 Name: ea-re2c
-Version: 3.1
+Version: 4.5
 Summary: re2c is a free and open-source lexer generator for C/C++, Go and Rust.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4556 for more details
 %define release_prefix 1
@@ -55,10 +55,29 @@ rm -rf %{buildroot}
 
 %files
 %attr(755,root,root) /usr/bin/re2c
+%attr(755,root,root) /usr/bin/re2d
+%attr(755,root,root) /usr/bin/re2hs
+%attr(755,root,root) /usr/bin/re2js
+%attr(755,root,root) /usr/bin/re2ocaml
+%attr(755,root,root) /usr/bin/re2py
+%attr(755,root,root) /usr/bin/re2swift
+%attr(755,root,root) /usr/bin/re2v
+%attr(755,root,root) /usr/bin/re2zig
 /usr/share/man/man1/re2c.1.gz
-/usr/share/re2c/stdlib/unicode_categories.re
+/usr/share/man/man1/re2d.1.gz
+/usr/share/man/man1/re2hs.1.gz
+/usr/share/man/man1/re2js.1.gz
+/usr/share/man/man1/re2ocaml.1.gz
+/usr/share/man/man1/re2py.1.gz
+/usr/share/man/man1/re2swift.1.gz
+/usr/share/man/man1/re2v.1.gz
+/usr/share/man/man1/re2zig.1.gz
+/usr/share/re2c/stdlib/
 
 %changelog
+* Tue Mar 24 2026 Cory McIntire <cory.mcintire@webpros.com> - 4.5-1
+- EA-13382: Update ea-re2c from v3.1 to v4.5
+
 * Fri Oct 04 2024 Julian Brown <julian.brown@cpanel.net> - 3.1-1
 - ZC-12239: Initial Release
 
