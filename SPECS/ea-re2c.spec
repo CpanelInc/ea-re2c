@@ -1,5 +1,5 @@
 Name: ea-re2c
-Version: 4.5.1
+Version: 4.6
 Summary: re2c is a free and open-source lexer generator for C/C++, Go and Rust.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4556 for more details
 %define release_prefix 1
@@ -75,6 +75,9 @@ rm -rf %{buildroot}
 /usr/share/re2c/stdlib/
 
 %changelog
+* Sun Aug 30 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 4.6-1
+- EA-13542: Update ea-re2c from v4.5.1 to v4.6
+
 * Thu Apr 02 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 4.5.1-1
 - EA-13398: Update ea-re2c from v4.5 to v4.5.1
 
